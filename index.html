@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Dynamic Web Fundamentals Gabriel Regis BONZO GOMA </title>
+    <meta name="description"
+      content=" Gabriel Regis BONZO GOMA's Assignment WDD 131 Dynamic Web Fundamentals W01: Home Page">
+    <meta name="author" content="Gabriel Regis BONZO GOMA">
+    <link rel="stylesheet" href="styles/base.css">
+
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/gabriel-regis-bonzo-goma-252aa4236/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/.">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+     
+   <h1>Gabriel Regis BONZO GOMA</h1>
+  <main class="container">
+   
+    <!-- Colonne gauche : About Me -->
+    <section class="card">
+      <header class="card__header">
+        <h2>About Me</h2>
+      </header>
+
+    <div class="card__body">
+        <div class="about">
+          <div class="about__text">
+            <p>
+        My name is Gabriel Régis Bonzo Goma, but I'm known as Gis, which is simply short for Régis.
+        I was born in the Republic of Congo and I currently live in Morocco for my university studies.
+        I also work as a journalist and radio host at Radio Citoyenne des Jeunes (Youth Citizen Radio) in my country. 
+        Information technology is a true passion of mine, and I know that with more faith and hard work, I will succeed in this field.
+            </p>
+    </div>  
+
+     <figure class="about__photo">
+           <img src="images/gis.jpg" alt="Gabriel Regis BONZO GOMA profile images" width="400" height="400" />
+          </figure>
+        </div>
+        <hr class="divider" />
+
+    <section class="location">
+          <h3>Toloria, Madagascar</h3>
+
+          <div class="location__grid">
+            <figure class="flag">
+              <img
+                src="data:image/png;base64,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"
+                alt="Official Flag of Madagascar"
+              />
+              <figcaption><em>Official Flag of Morocco</em></figcaption>
+            </figure>
+
+            <p class="location__text">
+            Morocco's history dates back nearly 300,000 years, with the Homo sapiens fossils discovered at Jebel Irhoud, among the oldest in the world. During Antiquity, the territory was inhabited by the Amazigh people and connected to the Mediterranean world through the Phoenicians, Carthaginians, and then the Romans, who notably developed Volubilis.
+In the 8th century, the arrival of Islam transformed the region. In 788, the Idrisid dynasty founded the first independent Moroccan state, with Fez as its major center. This was followed by the great Amazigh dynasties—the Almoravids, Almohads, and Marinids—who extended their influence as far as Andalusia and built the main imperial cities.
+In the modern era, the Saadians and then the Alaouites (from 1667 onward) consolidated the country's unity. Morocco became a French and Spanish protectorate in 1912 before regaining its independence in 1956.
+Today, Morocco is a constitutional monarchy whose identity encompasses its Arab, Amazigh, and African components, with Amazigh recognized as an official language since 2011..
+            </p>
+          </div>
+        </section>
+        
+        
+ </div>
+    </section>
+
+    <!-- Colonne droite : Web Dev Resources -->
+    <aside class="card">
+      <header class="card__header">
+        <h2>Web Dev Resources</h2>
+      </header>
+
+      <div class="card__body">
+        <ul class="links">
+          <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
+          <li><a href="https://www.smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS Tricks</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3 Schools</a></li>
+          <li><a href="https://www.udemy.com" target="_blank" rel="noopener">Udemy</a></li>
+          <li><a href="https://picsum.photos" target="_blank" rel="noopener">Lorem Picsum Image Placeholder</a></li>
+        </ul>
+      </div>
+    </aside>
+
+
+</main>
+<footer>
+       <!--<span> </span>-->
+    <p>©2026 | Gabriel Regis BONZO GOMA | Morocco, Casablanca. <br>last modified: March 03, 2026</p>
+   
+    </footer>
+</body>
+
+</html>
