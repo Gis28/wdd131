@@ -225,7 +225,7 @@ main.container {
 }
 
 /* ===== Footer ===== */
-footer {
+/*footer {
   margin: 28px auto 16px;
   text-align: center;
   background-color: rgb(71, 171, 190);
@@ -234,7 +234,7 @@ footer {
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
-}
+}*/
 
 /* ===== Accessibility: visible focus for keyboard users ===== */
 a:focus-visible,
@@ -272,4 +272,79 @@ button:focus-visible {
     max-width: 160px;
     justify-self: start;
   }
+}
+
+
+
+
+/* ==== Footer (scopé, sans impacter le span du header) ==== */
+footer{
+  background:#1f3a5f;              /* bleu foncé lisible (AA) */
+  color:#e6f2ff;                   /* texte clair */
+  border-top:4px solid #294a73;
+  padding:1rem 1rem 1.1rem;
+  text-align:center;
+}
+
+footer p{
+  margin:.2rem 0;
+  line-height:1.5;
+}
+
+/* 1er paragraphe : © + année (span#currentyear), nom, lieu */
+footer #currentyear{
+  font-weight:700;
+  letter-spacing:.2px;
+}
+
+/* Ajoute automatiquement le symbole © avant l'année (pas besoin de modifier le HTML) */
+footer #currentyear::before{
+  content:"©";
+  margin-right:.25rem;
+}
+
+/* Style facultatif pour séparer les éléments par des puces si tu utilises des | ou des span .sep */
+footer .sep{
+  padding:0 .45rem;
+  opacity:.9;
+}
+
+/* 2e paragraphe : dernière modification (plus clair) */
+footer #lastModified{
+  color:#a5d8ff;
+  font-size:.95rem;
+}
+
+/* Liens éventuels dans le footer (contraste et focus) */
+footer a{
+  color:#fff;
+  text-underline-offset:3px;
+}
+footer a:hover,
+footer a:focus-visible{
+  color:#a5d8ff;
+  text-decoration:underline;
+  outline:none;
+}
+
+/* Accessibilité : focus visible dans le footer */
+footer :focus-visible{
+  outline:3px solid #f59e0b;
+  outline-offset:2px;
+  border-radius:.25rem;
+}
+
+/* Responsive : taille de police légèrement réduite sur mobiles */
+@media (max-width: 480px){
+  footer{
+    padding:.85rem .75rem 1rem;
+  }
+  footer p{
+    font-size:.95rem;
+  }
+}
+
+footer *:focus-visible {
+  background: transparent !important;
+  box-shadow: none !important;
 }
